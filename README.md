@@ -35,5 +35,5 @@ You would first create a muting rule in the [one.newrelic.com](https://one.newre
 ```./nralertmute.py -a newrelic-account-number -k personal-apikey -m list``` 
 1. Enable muting rule: 
 ```./nralertmute.py -a newrelic-account-number -k personal-apikey -m enable -i muting-ruleId```
-1. Enable muting rule: 
+1. Disable muting rule: 
 ```./nralertmute.py -a newrelic-account-number -k personal-apikey -m disable -i muting-ruleId```
