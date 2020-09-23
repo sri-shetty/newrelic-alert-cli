@@ -26,10 +26,14 @@ You would first create a muting rule in the [one.newrelic.com](https://one.newre
     1. APIKEY: The personal apikey
     1. MUTING: The values could be:
         1. List - list all muting rules to find the muting rule id.
-        1. Enable - enable muting rule, once enabled no alerts go out for this violation condition to a notificatoion channel(s) linked to the policy.
+        1. Enable - enable muting rule, once enabled no alerts go out for this violation condition to a notification channel(s) linked to the policy.
         1. Disable - disable muting rule, after disabling alerts will start going out when critical incidents are created.
+    1. d: If you would like to run the cli in a debug mode.
 
 ## Add CLI command in your scheduler program (cron job)
-1. List all muting rules in your account:  ./nralertmute.py -a newrelic-account-number -k personal-apikey -m list 
-1. Enable muting rule: ./nralertmute.py -a newrelic-account-number -k personal-apikey -m enable -i muting-ruleId
-1. Enable muting rule: ./nralertmute.py -a newrelic-account-number -k personal-apikey -m disable -i muting-ruleId
+1. List all muting rules in your account:  
+```./nralertmute.py -a newrelic-account-number -k personal-apikey -m list``` 
+1. Enable muting rule: 
+```./nralertmute.py -a newrelic-account-number -k personal-apikey -m enable -i muting-ruleId```
+1. Enable muting rule: 
+```./nralertmute.py -a newrelic-account-number -k personal-apikey -m disable -i muting-ruleId```
