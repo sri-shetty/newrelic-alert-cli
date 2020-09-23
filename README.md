@@ -2,7 +2,7 @@
 This cli is based on python allows you to list, enable and disable muting rules for alerts. The purpose of this cli is to make it simple to setup recurring muting rules.
 
 # Setup
-You would first create a muting rule in the [one.newrelic.com] (https://one.newrelic.com/). Then use nralertmute.py cli command to set recurring muting rule.
+You would first create a muting rule in the [one.newrelic.com](https://one.newrelic.com/). Then use nralertmute.py cli command to set recurring muting rule.
 1. Enable at specified interval to mute alerts.
 1. Disable at specified interval to unmute alerts.
 
